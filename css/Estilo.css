@@ -1,0 +1,225 @@
+body {
+  background-color: #f1e3e3;
+  position: relative;
+}
+
+.Header {
+  width: 100%;
+  height: 95vh;
+  background-image: linear-gradient(180deg, #434e52, #009cfd41 100%),
+    url(../img/verdurashome.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  position: relative;
+  overflow: hidden;
+}
+
+.bg-dark {
+  background-color: #393e46 !important;
+  position: fixed;
+  z-index: 50;
+  width: 100%;
+}
+
+.bg-dark1 {
+  background-color: #393e46 !important;
+  position: fixed;
+  z-index: 50;
+  width: 100%;
+  border-bottom: 2px solid #fdbb2d;
+}
+
+@media (min-width: 768px) {
+  .bg-dark {
+    background-color: transparent !important;
+  }
+}
+
+.naveg a {
+  color: #fff !important;
+  font-family: "Montserrat";
+  font-size: 23px;
+  padding: 4px 15px;
+  text-align: center;
+}
+
+.naveg a:hover {
+  background: linear-gradient(160deg, #22c2c3 0%, #fdbb2d 100%);
+  border-radius: 5%;
+}
+
+.Text-hero {
+  height: 550px;
+  color: #fff;
+  font-family: "Rajdhani";
+  padding-top: 190px;
+}
+
+.Text-hero h3,
+h5 {
+  font-size: 70px;
+  letter-spacing: 0.2em;
+  font-weight: bold;
+  display: flex;
+}
+
+@media (max-width: 500px) {
+  .Text-hero h3,
+  h5 {
+    font-size: 47px;
+  }
+}
+
+.Text-hero a {
+  font-family: "Montserrat";
+  color: #fff !important;
+  font-size: 23px;
+  padding: 5px 10px 5px 10px;
+  text-decoration: none;
+  border-radius: 5%;
+  background: linear-gradient(160deg, #22c3c3bb 0%, #fdbb2db0 100%);
+}
+
+.Text-hero a:hover {
+  background: linear-gradient(160deg, #22c2c3 0%, #fdbb2d 100%);
+}
+
+/* .svg */
+
+.svg-hero {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+}
+
+/* .svg */
+
+/* Termina el Header / Nav / SVG */
+
+/* Seccion Perfeil */
+
+.Perfil {
+  background-color: #e8e4e1;
+  padding-top: 80px;
+  padding-bottom: 80px;
+  text-align: center;
+}
+
+.Perfil h1 {
+  font-family: "MuseoModerno";
+  font-size: 50px;
+  padding-bottom: 13px;
+}
+
+.Perfil h3 {
+  font-family: "Rajdhani";
+  font-size: 35px;
+  padding-bottom: 13px;
+  letter-spacing: 7px;
+}
+
+.Perfil p {
+  font-family: "Montserrat";
+  font-size: 22px;
+  font-weight: 500;
+}
+/* Fin Seccion Perfil */
+
+/* Seccion Galeria  */
+.Galeria {
+  background-image: linear-gradient(180deg, #434e52, #009cfd41 100%),
+    url(../img/verdurashome.jpg);
+  padding-top: 80px;
+  padding-bottom: 80px;
+  color: #f5f5f5;
+}
+
+.Galeria h2 {
+  font-family: "MuseoModerno";
+  font-size: 50px;
+  padding-bottom: 7px;
+}
+
+.Galeria h4 {
+  font-family: "Montserrat";
+  font-size: 22px;
+  font-weight: 500;
+  padding-bottom: 10px;
+}
+
+.Galeria .col-lg-4 {
+  margin: 0 !important;
+  padding: 3px;
+  transition: 0.2s linear;
+}
+
+.Galeria .col-lg-4:hover {
+  transform: scale(1.05);
+  z-index: 1;
+}
+
+.Galeria .row img {
+  width: 100%;
+  height: 250px;
+}
+
+/* Termina gakleria */
+
+.Contacto {
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+
+.Contacto h1 {
+  font-family: "MuseoModerno";
+  padding-bottom: 20px;
+}
+
+.Contacto input {
+  margin-bottom: 23px;
+  border: none;
+  border-radius: 0;
+  box-shadow: none !important;
+  border-bottom: 1px solid #313848;
+  margin-right: 10px;
+}
+
+.Contacto textarea {
+  margin-bottom: 13px;
+  border: none;
+  border-bottom: 1px solid #313848;
+  border-radius: 0;
+  box-shadow: none !important;
+  min-height: 150px !important;
+  max-height: 150px !important;
+  min-width: 100%;
+  resize: vertical;
+}
+
+.Contacto a {
+  color: #fff !important;
+  font-family: "Montserrat";
+  font-size: 20 px;
+  padding: 4px 15px;
+  text-align: center;
+  background: linear-gradient(160deg, #22c3c3bb 0%, #fdbb2db0 100%);
+  text-decoration: none;
+}
+
+.Contacto a:hover {
+  background: linear-gradient(160deg, #22c3c3f1 0%, #fdbb2dee 100%);
+}
+
+.foot {
+  background: linear-gradient(160deg, #22c3c3f1 0%, #fdbb2dee 100%);
+}
+
+.foot h4 {
+  font-family: "MuseoModerno";
+  padding: 10px;
+  margin: 0;
+  overflow: hidden;
+}

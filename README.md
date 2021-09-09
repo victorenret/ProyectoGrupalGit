@@ -1,1 +1,2 @@
-# ProyectoGrupalGit
+# ProyectoTeLoVendoGrupal
+ proyecto grupal
