@@ -223,3 +223,10 @@ h5 {
   margin: 0;
   overflow: hidden;
 }
+
+h6 {
+  color: #fdbb2d;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  text-align: center;
+  font-size: medium;
