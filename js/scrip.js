@@ -30,10 +30,7 @@ window.addEventListener('scroll', function () {
 
 });
 
-window.onload = function () {
-    var fecha;
-    var hora;
-
+function startfecha() {
     var d = new Date(),
         month = '' + (d.getMonth() + 1),
         day = '' + d.getDate(),
@@ -45,13 +42,10 @@ window.onload = function () {
         day = '0' + day;
     fechap = [day, month, year].join('-')
 
-    let fechaYHora = new Date()
-    console.log(fechaYHora.toLocaleString())
-
-    document.getElementById("ejecucion").innerHTML = fechap;
+    document.getElementById("fecha").innerHTML = fechap;
 };
 
-    function startTime("ejecucion") {
+    function startTime() {
         today = new Date();
         h = today.getHours();
         m = today.getMinutes();
@@ -61,5 +55,9 @@ window.onload = function () {
         document.getElementById('reloj').innerHTML = h + ":" + m + ":" + s;
         t = setTimeout('startTime()', 500);
     }
+
     function checkTime(i) { if (i < 10) { i = "0" + i; } return i; }
-    window.onload = function () { startTime(); }
+    window.onload = function () { 
+        startTime(); 
+        startfecha(); 
+    }
