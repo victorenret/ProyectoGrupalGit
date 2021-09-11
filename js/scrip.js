@@ -59,31 +59,6 @@ window.onload = function () {
   startfecha();
 };
 
-// document.addEventListener("DOMContentLoaded", function () {
-//   document
-//     .getElementById("formulario")
-//     .addEventListener("submit", validarFormulario);
-// });
-
-// function validarFormulario(evento) {
-//   evento.preventDefault();
-//   var usuario = document.getElementById("nombre").value;
-//   if (usuario.length == 0) {
-//     alert("Ingresar nombre");
-//     return;
-//   }
-//   var clave = document.getElementById("correo").value;
-//   if (clave.length == 0) {
-//     alert("Ingresar correo");
-//     return;
-//   }
-//   var clave = document.getElementById("mensaje").value;
-//   if (clave.length == 0) {
-//     alert("Ingresa tu mensaje");
-//     return;
-//   }
-//   this.submit();
-// }
 document.addEventListener("DOMContentLoaded", function () {
     document.getElementById("formulario").addEventListener('submit', validarFormulario);
 });
