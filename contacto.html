@@ -38,18 +38,32 @@
                 </div>
             </div>
 
-            <section class=" Contacto container">
+            <!-- <section class=" Contacto container">
                 <h1 class="text-center">Contactame</h1>
-                <form class="fromCont">
+                <form class="fromCont" id="formulario">
                     <div class="row d-flex justify-content-between">
-                        <input class="form-control col-sm-12 col-md-6" type="text" placeholder="Nombre Completo ">
-                        <input class="form-control col-sm-12 col-md-5" type="email" placeholder="Correo (Email)">
+                        <input class="form-control col-sm-12 col-md-6" type="text" placeholder="Nombre Completo" id="nombre">
+                        <input class="form-control col-sm-12 col-md-5" type="email" placeholder="Correo Email" id="correo">
                         <textarea class="form-control col-md-12 col-md-6" rows=""
-                            placeholder="Escribe tu mensaje"></textarea>
-                        <a href="" class="col-sm-2">Enviar Mensaje</a>
+                            placeholder="Escribe tu mensaje" id="mensaje"></textarea>
+                            <input href="" class="col-md-2" type="button" value="Enviar mensaje">
+                    </div>
+                </form>
+            </section> -->
+            <section class="Contacto container">
+                <h1 class="text-center">CONTACTAME</h1>
+                <form class="fromCont" id="formulario">
+                    <div class="row d-flex justify-content-between">
+                        <input class="form-control col-sm-12 col-md-6" placeholder="Escribe Tu Nombre Aqui" type="text"
+                            id="nombre" name="nombre">
+                        <input class="form-control col-sm-12 col-md-5" placeholder="Escribe Tu Email Aqui" type="email"
+                            id="correo" name="correo">
+                        <textarea class="form-control col-md-12" placeholder="Escribe Tu Mensaje Aqui" id="mensaje" name="mensaje"></textarea>
+                        <input href="" class="col-md-2" type="submit" value="Enviar Mensaje">
                     </div>
                 </form>
             </section>
+
 
         </header>
 
