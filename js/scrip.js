@@ -59,28 +59,43 @@ window.onload = function () {
   startfecha();
 };
 
-document.addEventListener("DOMContentLoaded", function () {
-    document.getElementById("formulario").addEventListener('submit', validarFormulario);
+$(document).ready(function(){
+  $("#formulario").validate({
+    rules:{
+      usuario: {
+        required: true, 
+        minlength: 3, 
+        maxlength: 15,
+      },
+      correo: {
+        required: true, 
+        minlength: 10, 
+        maxlength: 20,
+      },
+      mensaje: {
+        required: true, 
+        minlength: 10, 
+        maxlength: 100,
+      }
+    },
+    messages: {
+      usuario: {
+        required: "Debe ingresar Nombre y Apellido", 
+        minlength: "El usuario debe tener un mínimo de 3 carácteres", 
+        maxlength: "El usuario debe tener un máximo de 15 carácteres",
+      },
+      correo: {
+        required: "Debe ingresar un Correo Válido", 
+        minlength: "El correo debe tener un mínimo de 10 carácteres", 
+        maxlength: "El correo debe tener un máximo de 20 carácteres",
+      },
+      mensaje: {
+        required: "Debe ingresar un Mensaje", 
+        minlength: "El mensaje debe tener un mínimo de 10 carácteres", 
+        maxlength: "El mensaje debe tener un máximo de 100 carácteres",
+      }
+    },
+
+  });
+
 });
-
-function validarFormulario(evento) {
-    evento.preventDefault();
-    var usuario = document.getElementById('nombre').value;
-    if (usuario.length == 0) {
-        alert('Introducir texto en el campo Nombre');
-        return;
-    }
-
-    var correo = document.getElementById('correo').value;
-    if (correo.length == 0) {
-        alert('Introducir texto en el campo Correo');
-        return;
-    }
-
-    var mensaje = document.getElementById('mensaje').value;
-    if (mensaje.length == 0) {
-        alert('Introducir texto en el campo Mensaje');
-        return;
-    }
-    this.submit();
-}
