@@ -59,6 +59,8 @@ window.onload = function () {
   startfecha();
 };
 
+// JQUERY PARA VALIDAR FORMULARIO
+
 $(document).ready(function(){
   $("#formulario").validate({
     rules:{
@@ -70,7 +72,7 @@ $(document).ready(function(){
       correo: {
         required: true, 
         minlength: 10, 
-        maxlength: 20,
+        maxlength: 50,
       },
       mensaje: {
         required: true, 
@@ -87,11 +89,11 @@ $(document).ready(function(){
       correo: {
         required: "Debe ingresar un Correo Válido", 
         minlength: "El correo debe tener un mínimo de 10 carácteres", 
-        maxlength: "El correo debe tener un máximo de 20 carácteres",
+        maxlength: "El correo debe tener un máximo de 50 carácteres",
       },
       mensaje: {
         required: "Debe ingresar un Mensaje", 
-        minlength: "El mensaje debe tener un mínimo de 10 carácteres", 
+        minlength: "El mensaje debe tener como minimo 10 carácteres", 
         maxlength: "El mensaje debe tener un máximo de 100 carácteres",
       }
     },

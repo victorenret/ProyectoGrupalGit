@@ -176,6 +176,8 @@ h5 {
 .Contacto h1 {
   font-family: "MuseoModerno";
   padding-bottom: 20px;
+  color: rgb(14, 1, 1);
+  font-weight: 900;
 }
 
 .Contacto input {
@@ -231,4 +233,10 @@ h6 {
     "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
   text-align: center;
   font-size: medium;
+}
+
+form{
+  font-size: 20px;
+  font-weight: 900;
+  color: rgb(174, 221, 228);
 }
