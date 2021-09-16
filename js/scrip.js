@@ -62,7 +62,8 @@ window.onload = function () {
 // JQUERY PARA VALIDAR FORMULARIO
 
 $(document).ready(function(){
-  $("#formulario").validate({
+  if(document.getElementById("formulario")) {
+    $("#formulario").validate({ 
     rules:{
       usuario: {
         required: true, 
@@ -97,7 +98,6 @@ $(document).ready(function(){
         maxlength: "El mensaje debe tener un máximo de 100 carácteres",
       }
     },
-
   });
-
+  }
 });
