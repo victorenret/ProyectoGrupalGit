@@ -102,20 +102,23 @@ $(document).ready(function(){
   }
 })
 
-function envioMensaje(){
-  let nombre = getElementById().value;
-  let email = getElementById().value;
-  let mensaje = getElementById().value;
-  let confirmacion= confirm("¿Está seguro de enviar su mensaje?");
- 
-  if((nombre!=0)&&(email!=0)&&(mensaje!=0)){
-     if (confirmacion) {
-        alert("Su mensaje ha sido enviado exitosamente");
+
+
+function confirmarenvio(){
+
+  var nombre = document.getElementById("txtnombre").value;
+  var email = document.getElementById("txtemail").value;
+  var mensaje = document.getElementById("txtmensaje").value;
+
+if((nombre.length != 0)&&(email.length != 0)&&(mensaje.length != 0)){
+    var confirmacion = confirm("¿Desea enviar su mensaje?");
+    if (confirmacion) {
+        alert("Mensaje enviado");
         return true;
-     }else{
-        alert("El envió de su mensaje ha sido cancelado");
+    } else {
+        alert("Su mensaje no ha sido enviado");
         return false;
-}
-}
+    }
+  }
 }
 

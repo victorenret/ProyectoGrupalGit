@@ -47,17 +47,17 @@
             </div>
             <section class="Contacto container">
                 <h1 class="text-center">CONTACTAME</h1>
-                <form class="fromCont" action="" id="formulario" onsubmit="return envioMensaje()">
+                <form class="fromCont" action="" id="formulario " >
                     <div class="row d-flex justify-content-between">
                         <input class="form-control col-sm-12 col-md-6" placeholder="Escribe Tu Nombre Aquí" type="text"
-                            name="usuario" id="nombre">
+                            name="usuario" id="txtnombre">
                         <input class="form-control col-sm-12 col-md-5" placeholder="Escribe Tu Email Aquí" type="email"
-                            name="correo" id="email">
+                            name="correo" id="txtemail">
                         <textarea class="form-control col-md-12" placeholder="Escribe Tu Mensaje Aquí" 
-                            name="mensaje" id="mensaje"></textarea>
-                        <input href="" class="col-md-2" type="submit" value="Enviar Mensaje">
+                            name="mensaje" id="txtmensaje"></textarea>
+                        <input href="" class="col-md-2" type="submit" value="Enviar Mensaje" onclick="return confirmarenvio()">
                     </div>
-                </form>
+                </form> 
                 <br>
                 <button>
                     <a href="index.html" class="boton">
