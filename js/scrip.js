@@ -100,4 +100,22 @@ $(document).ready(function(){
     },
   });
   }
-});
+})
+
+function envioMensaje(){
+  let nombre = getElementById().value;
+  let email = getElementById().value;
+  let mensaje = getElementById().value;
+  let confirmacion= confirm("¿Está seguro de enviar su mensaje?");
+ 
+  if((nombre!=0)&&(email!=0)&&(mensaje!=0)){
+     if (confirmacion) {
+        alert("Su mensaje ha sido enviado exitosamente");
+        return true;
+     }else{
+        alert("El envió de su mensaje ha sido cancelado");
+        return false;
+}
+}
+}
+

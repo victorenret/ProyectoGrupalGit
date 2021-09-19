@@ -47,14 +47,14 @@
             </div>
             <section class="Contacto container">
                 <h1 class="text-center">CONTACTAME</h1>
-                <form class="fromCont" action="" id="formulario">
+                <form class="fromCont" action="" id="formulario" onsubmit="return envioMensaje()">
                     <div class="row d-flex justify-content-between">
                         <input class="form-control col-sm-12 col-md-6" placeholder="Escribe Tu Nombre Aquí" type="text"
-                            name="usuario">
+                            name="usuario" id="nombre">
                         <input class="form-control col-sm-12 col-md-5" placeholder="Escribe Tu Email Aquí" type="email"
-                            name="correo">
+                            name="correo" id="email">
                         <textarea class="form-control col-md-12" placeholder="Escribe Tu Mensaje Aquí" 
-                            name="mensaje"></textarea>
+                            name="mensaje" id="mensaje"></textarea>
                         <input href="" class="col-md-2" type="submit" value="Enviar Mensaje">
                     </div>
                 </form>
@@ -101,6 +101,7 @@
             <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
             integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
         <script src="js/scrip.js"></script>
+        <script type="text/javascript" src="js/scrip.js"></script> 
         
 </body>
 
