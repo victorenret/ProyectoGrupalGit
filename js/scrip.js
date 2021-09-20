@@ -59,28 +59,66 @@ window.onload = function () {
   startfecha();
 };
 
-document.addEventListener("DOMContentLoaded", function () {
-    document.getElementById("formulario").addEventListener('submit', validarFormulario);
-});
+// JQUERY PARA VALIDAR FORMULARIO
 
-function validarFormulario(evento) {
-    evento.preventDefault();
-    var usuario = document.getElementById('nombre').value;
-    if (usuario.length == 0) {
-        alert('Introducir texto en el campo Nombre');
-        return;
-    }
+$(document).ready(function(){
+  if(document.getElementById("formulario")) {
+    $("#formulario").validate({ 
+    rules:{
+      usuario: {
+        required: true, 
+        minlength: 3, 
+        maxlength: 15,
+      },
+      correo: {
+        required: true, 
+        minlength: 10, 
+        maxlength: 50,
+      },
+      mensaje: {
+        required: true, 
+        minlength: 10, 
+        maxlength: 100,
+      }
+    },
+    messages: {
+      usuario: {
+        required: "Debe ingresar Nombre y Apellido", 
+        minlength: "El usuario debe tener un mínimo de 3 carácteres", 
+        maxlength: "El usuario debe tener un máximo de 15 carácteres",
+      },
+      correo: {
+        required: "Debe ingresar un Correo Válido", 
+        minlength: "El correo debe tener un mínimo de 10 carácteres", 
+        maxlength: "El correo debe tener un máximo de 50 carácteres",
+      },
+      mensaje: {
+        required: "Debe ingresar un Mensaje", 
+        minlength: "El mensaje debe tener como minimo 10 carácteres", 
+        maxlength: "El mensaje debe tener un máximo de 100 carácteres",
+      }
+    },
+  });
+  }
 
-    var correo = document.getElementById('correo').value;
-    if (correo.length == 0) {
-        alert('Introducir texto en el campo Correo');
-        return;
-    }
+})
 
-    var mensaje = document.getElementById('mensaje').value;
-    if (mensaje.length == 0) {
-        alert('Introducir texto en el campo Mensaje');
-        return;
+
+function confirmarenvio(){
+
+  var nombre = document.getElementById("txtnombre").value;
+  var email = document.getElementById("txtemail").value;
+  var mensaje = document.getElementById("txtmensaje").value;
+
+if((nombre.length != 0)&&(email.length != 0)&&(mensaje.length != 0)){
+    var confirmacion = confirm("¿Desea enviar su mensaje?");
+    if (confirmacion) {
+        alert("Mensaje enviado");
+        return true;
+    } else {
+        alert("Su mensaje no ha sido enviado");
+        return false;
     }
-    this.submit();
+  }
 }
+

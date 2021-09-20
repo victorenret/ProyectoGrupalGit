@@ -1,0 +1,150 @@
+
+/*termina el nav*/
+header, .alert{
+  z-index: 100;
+}
+.description{
+  height: 25px;
+  overflow: hidden;
+  transition: height .3s ease-in .3s;
+}
+.description:hover{
+  height: 80px;
+}
+.carrito{
+  min-height: 80vh;
+  max-width: 1000px;
+  margin: 0 auto;
+  width: 100%;
+}
+.table__productos{
+  display: flex;
+}
+.table__productos > img{
+  width: 9rem;
+  object-fit: contain;
+  border-radius: 6px;
+  margin-right: 20px;
+}
+.table__cantidad > input{
+  width: 40px;
+  border: none;
+  outline: 0;
+  font-size: 16px;
+  font-weight: 700;
+  margin-right: 30px;
+  margin-bottom: 20px;
+}
+.hide, .remove{
+  display: none;
+}
+
+/*nav*/
+
+.Header {
+  background-image: linear-gradient(180deg, #434e52, #009cfd41 100%),
+    url(../img/verdurashome.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  position: relative;
+  overflow: hidden;
+}
+
+.bg-dark1 {
+  background-color: #393e46 !important;
+  position: fixed;
+  z-index: 50;
+  width: 100%;
+  border-bottom: 2px solid #fdbb2d;
+}
+
+
+.naveg a {
+  color: #fff !important;
+  font-family: "Montserrat";
+  font-size: 23px;
+  padding: 4px 15px;
+  text-align: center;
+}
+
+.naveg a:hover {
+  background: linear-gradient(160deg, #22c2c3 0%, #fdbb2d 100%);
+  border-radius: 5%;
+}
+
+.Text-hero {
+  height: 550px;
+  color: #fff;
+  font-family: "Rajdhani";
+  padding-top: 190px;
+}
+
+
+.Text-hero a {
+  font-family: "Montserrat";
+  color: #fff !important;
+  font-size: 23px;
+  padding: 5px 10px 5px 10px;
+  text-decoration: none;
+  border-radius: 5%;
+  background: linear-gradient(160deg, #22c3c3bb 0%, #fdbb2db0 100%);
+}
+
+.Text-hero a:hover {
+  background: linear-gradient(160deg, #22c2c3 0%, #fdbb2d 100%);
+}
+
+/*foot*/
+.foot {
+  background: linear-gradient(160deg, #22c3c3f1 0%, #fdbb2dee 100%);
+  text-align: center;
+}
+
+.foot h4 {
+  font-family: "MuseoModerno";
+  padding: 10px;
+  margin: 0;
+  overflow: hidden;
+}
+
+/*redes*/
+
+.social-networks a {
+  display: inline-flex;
+  color: #ffffff;
+  height: 48px;
+  width: 48px;
+  background-color: #000000;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  border-radius: 50%;
+  margin: 0 6px;
+  transition: transform 0.4s;
+}
+
+.social-networks a:hover {
+  transform: scale(1.3);
+}
+
+.social-networks a.facebook {
+  background-color: #3c70a4;
+}
+
+.social-networks a.twitter {
+  background-color: #5bd1d7;
+}
+
+.social-networks a.google {
+  background-color: #ee4540;
+}
+
+.social-networks a.youtube {
+  background-color: #c72c41;
+}
+
+.social-networks a.instagram {
+  background-color: #bb7171;
+}
