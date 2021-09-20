@@ -36,9 +36,9 @@
                                 <a href="./verduras.html">CATALOGO VERDURAS</a>
                                 <a href="frutas.html">CATALOGO  FRUTAS</a>
                                 <div class="social-networks justify-content-center">
-                                    <a href="#" class="facebook"><i class="fab fa-facebook-f"></i></a>
-                                    <a href="#" class="twitter"><i class="fab fa-twitter"></i></a>
-                                    <a href="#" class="instagram"><i class="fab fa-instagram"></i></a>
+                                    <a href="http://facebook.com" class="facebook"><i class="fab fa-facebook-f"></i></a>
+                                    <a href="http://www.twitter.com" class="twitter"><i class="fab fa-twitter"></i></a>
+                                    <a href="http://www.instagram.com" class="instagram"><i class="fab fa-instagram"></i></a>
                                 </div>
                             </div>
                         </div>
@@ -47,17 +47,17 @@
             </div>
             <section class="Contacto container">
                 <h1 class="text-center">CONTACTAME</h1>
-                <form class="fromCont" action="" id="formulario">
+                <form class="fromCont" action="" id="formulario " >
                     <div class="row d-flex justify-content-between">
                         <input class="form-control col-sm-12 col-md-6" placeholder="Escribe Tu Nombre Aquí" type="text"
-                            name="usuario">
+                            name="usuario" id="txtnombre">
                         <input class="form-control col-sm-12 col-md-5" placeholder="Escribe Tu Email Aquí" type="email"
-                            name="correo">
+                            name="correo" id="txtemail">
                         <textarea class="form-control col-md-12" placeholder="Escribe Tu Mensaje Aquí" 
-                            name="mensaje"></textarea>
-                        <input href="" class="col-md-2" type="submit" value="Enviar Mensaje">
+                            name="mensaje" id="txtmensaje"></textarea>
+                        <input href="" class="col-md-2" type="submit" value="Enviar Mensaje" onclick="return confirmarenvio()">
                     </div>
-                </form>
+                </form> 
                 <br>
                 <button>
                     <a href="index.html" class="boton">
@@ -73,9 +73,9 @@
                 <h3 id="fecha"></h3>
                 <h3 id="reloj"></h3>
                 <div class="social-networks">
-                    <a href="#" class="facebook"><i class="fab fa-facebook-f"></i></a>
-                    <a href="#" class="twitter"><i class="fab fa-twitter"></i></a>
-                    <a href="#" class="instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="http://facebook.com" class="facebook"><i class="fab fa-facebook-f"></i></a>
+                    <a href="http://www.twitter.com" class="twitter"><i class="fab fa-twitter"></i></a>
+                    <a href="http://www.instagram.com" class="instagram"><i class="fab fa-instagram"></i></a>
                 </div>
                 <h4>Aniza <br>
                     Constanza <br>
@@ -101,6 +101,7 @@
             <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
             integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
         <script src="js/scrip.js"></script>
+        <script type="text/javascript" src="js/scrip.js"></script> 
         
 </body>
 
