@@ -16,12 +16,15 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css"
         integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
     <title>COME VERDURAS</title>
-    <link rel="stylesheet" href="css/Estilo.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous" />
+
+    <link rel="stylesheet" href="css/ventastyles.css" />
 </head>
 
 <body>
 
-    <header class="Header">
+    <header class="Header ">
         <div class="bg-dark bd-dark1 " id="menSoc">
             <div class="container">
                 <nav class="navbar bg-transparent navbar-dark navbar-expand-lg">
@@ -33,10 +36,10 @@
                     <div class="naveg collapse navbar-collapse " id="Menuprincial">
 
                         <div class="naveg  navbar-nav w-100 justify-content-center">
-                            <a href="index.html"> INICIO</a>
-                            <a href="galeria.html"> GALERIA</a>
+                            <a href="galeria.html">GALERIA</a>
                             <a href="verduras.html">CATALOGO VERDURAS</a>
-                            <a href="contacto.html"> CONTACTO</a>
+                            <a href="frutas.html">CATALOGO FRUTAS</a>
+                            <a href="contacto.html">CONTACTO</a>
                             <div class="social-networks justify-content-center">
                                 <a href="#" class="facebook"><i class="fab fa-facebook-f"></i></a>
                                 <a href="#" class="twitter"><i class="fab fa-twitter"></i></a>
@@ -46,352 +49,221 @@
                     </div>
                 </nav>
             </div>
+        </div><br><br>
+        <ul class="nav nav-pills mb-3 py-3 container" id="pills-tab" role="tablist">
+            <li class="nav-item" role="presentation">
+                <a class="nav-link active" id="pills-profile-tab" data-bs-toggle="pill"
+                    data-bs-target="#pills-profile" type="button" role="tab"
+                    aria-controls="pills-profile" aria-selected="false">Productos</a>
+            </li>
+            <li class="nav-item" role="presentation">
+                <a class="nav-link" id="pills-contact-tab" data-bs-toggle="pill"
+                    data-bs-target="#pills-contact" type="button" role="tab"
+                    aria-controls="pills-contact" aria-selected="false">Carrito</a>
+            </li>
+        </ul><br>
+    <div class="alert container position-sticky top-0 alert-primary hide" role="alert">
+        Producto Añadido al carrito!
+    </div>
+    <div class="alert container position-sticky top-0 alert-danger remove" role="alert">
+        Producto removido!
+    </div>
+
+    <div class="tab-content" id="pills-tabContent">
+        <div class="tab-pane fade " id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
+            1
         </div>
-        
-        <div class="Text-hero">
-            <div class="container ">
-                <h3>INVIERTE EN TU SALUD</h3>
-                <h5>COME SANO, VIVE SANO</h5>
+        <div class="tab-pane fade show active container" id="pills-profile" role="tabpanel"
+            aria-labelledby="pills-profile-tab">
+            <h2 class="h4 m-4 text-primary">Productos</h2>
+
+            <div class="row row-cols-sm-1 row-cols-md-2 row-cols-lg-3 row-cols-xl-4">
+
+                <div class="col d-flex justify-content-center mb-4">
+                    <div class="card shadow mb-1 bg-dark rounded" style="width: 20rem;">
+                        <h5 class="card-title pt-2 text-center text-primary">lechuga</h5>
+                        <img src="./img/lechuga morada.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <p class="card-text text-white-50 description">Some quick example text to build on the card
+                                title and make up the bulk of the card's content.</p>
+                            <h5 class="text-primary">Precio: <span class="precio">$ 7</span></h5>
+                            <div class="d-grid gap-2">
+                                <button class="btn btn-primary button">Añadir a Carrito</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col d-flex justify-content-center mb-4">
+                    <div class="card shadow mb-1 bg-dark rounded" style="width: 20rem;">
+                        <h5 class="card-title pt-2 text-center text-primary">betarraga</h5>
+                        <img src="./img/betarraga.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <p class="card-text text-white-50 description">Some quick example text to build on the card
+                                title and make up the bulk of the card's content.</p>
+                            <h5 class="text-primary">Precio: <span class="precio">$ 9</span></h5>
+                            <div class="d-grid gap-2">
+                                <button class="btn btn-primary button">Añadir a Carrito</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col d-flex justify-content-center mb-4">
+                    <div class="card shadow mb-1 bg-dark rounded" style="width: 20rem;">
+                        <h5 class="card-title pt-2 text-center text-primary">cebolla morada</h5>
+                        <img src="./img/cebolla morada.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <p class="card-text text-white-50 description">Some quick example text to build on the card
+                                title and make up the bulk of the card's content.</p>
+                            <h5 class="text-primary">Precio: <span class="precio">$ 6</span></h5>
+                            <div class="d-grid gap-2">
+                                <button class="btn btn-primary button">Añadir a Carrito</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col d-flex justify-content-center mb-4">
+                    <div class="card shadow mb-1 bg-dark rounded" style="width: 20rem;">
+                        <h5 class="card-title pt-2 text-center text-primary">tomate cherry</h5>
+                        <img src="./img/tomate cherry.jpg"card-img-top" alt="...">
+                        <div class="card-body">
+                            <p class="card-text text-white-50 description">Some quick example text to build on the card
+                                title and make up the bulk of the card's content.</p>
+                            <h5 class="text-primary">Precio: <span class="precio">$ 12</span></h5>
+                            <div class="d-grid gap-2">
+                                <button class="btn btn-primary button">Añadir a Carrito</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col d-flex justify-content-center mb-4">
+                    <div class="card shadow mb-1 bg-dark rounded" style="width: 20rem;">
+                        <h5 class="card-title pt-2 text-center text-primary">naranja</h5>
+                        <img src="./img/naranja.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <p class="card-text text-white-50 description">Some quick example text to build on the card
+                                title and make up the bulk of the card's content.</p>
+                            <h5 class="text-primary">Precio: <span class="precio">$ 6</span></h5>
+                            <div class="d-grid gap-2">
+                                <button class="btn btn-primary button">Añadir a Carrito</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col d-flex justify-content-center mb-4">
+                    <div class="card shadow mb-1 bg-dark rounded" style="width: 20rem;">
+                        <h5 class="card-title pt-2 text-center text-primary">maracuya</h5>
+                        <img src="./img/maracuya.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <p class="card-text text-white-50 description">Some quick example text to build on the card
+                                title and make up the bulk of the card's content.</p>
+                            <h5 class="text-primary">Precio: <span class="precio">$ 13</span></h5>
+                            <div class="d-grid gap-2">
+                                <button class="btn btn-primary button">Añadir a Carrito</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col d-flex justify-content-center mb-4">
+                    <div class="card shadow mb-1 bg-dark rounded" style="width: 20rem;">
+                        <h5 class="card-title pt-2 text-center text-primary">freutilla</h5>
+                        <img src="./img/frutilla.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <p class="card-text text-white-50 description">Some quick example text to build on the card
+                                title and make up the bulk of the card's content.</p>
+                            <h5 class="text-primary">Precio: <span class="precio">$ 24</span></h5>
+                            <div class="d-grid gap-2">
+                                <button class="btn btn-primary button">Añadir a Carrito</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col d-flex justify-content-center mb-4">
+                    <div class="card shadow mb-1 bg-dark rounded" style="width: 20rem;">
+                        <h5 class="card-title pt-2 text-center text-primary">arandano</h5>
+                        <img src="./img/arandano.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <p class="card-text text-white-50 description">Some quick example text to build on the card
+                                title and make up the bulk of the card's content.</p>
+                            <h5 class="text-primary">Precio: <span class="precio">$ 14</span></h5>
+                            <div class="d-grid gap-2">
+                                <button class="btn btn-primary button">Añadir a Carrito</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
             </div>
 
         </div>
+        <div class="tab-pane fade carrito" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab">
+            <br>
+            <table class="table table-dark table-hover">
+                <thead>
+                    <tr class="text-primary">
+                        <th scope="col">#</th>
+                        <th scope="col">Productos</th>
+                        <th scope="col">Precio</th>
+                        <th scope="col">Cantidad</th>
+                    </tr>
+                </thead>
+                <tbody class="tbody">
 
-        <svg class="svg-hero" viewbox="0 0 1440 320">
-            <path fill="#e8e4e1" fill-opacity="1"
-                d="M0,288L120,288C240,288,480,288,720,245.3C960,203,1200,117,1320,74.7L1440,32L1440,320L1320,320C1200,320,960,320,720,320C480,320,240,320,120,320L0,320Z">
-            </path>
-        </svg>
-    </header>
 
-    
-    <section class="p-5  verduras">
-        <div>
-            <h2 class="text-center ">FRUTAS</h2>
-            <p class="lead text-center  mb-5">
-            </p>
-            <div class="row g-4">
-                <div class="col-md-6 col-lg-3">
-                    <div class="card bg-light">
-                        <div class="card-body text-center">
-                            <img src="./img/zandia.jpg" class="rounded-circle mb-3" alt="sandia" />
-                            <h3 class="card-title mb-3">Sandia</h3>
-                            <p class="card-text">
-                                $2.500 und.
-                            </p>
-                            <a href="./contacto.html">Haz tu pedido</a>
-                        </div>
-                    </div>
-                </div>
-                </div>
-                </div>
-                <div class="col-md-6 col-lg-3">
-                    <div class="card bg-light">
-                        <div class="card-body text-center">
-                            <img src="./img/piña.jpg" class="rounded-circle mb-3" alt="piña" />
-                            <h3 class="card-title mb-3">Piña</h3>
-                            <p class="card-text text-center">
-                                $1.200 und.
-                            </p>
-                                <a href="./contacto.html">Haz tu pedido</a>
-                        </div>
-                    </div>
-                </div>
 
-                <div class="col-md-6 col-lg-3">
-                    <div class="card bg-light">
-                        <div class="card-body text-center">
-                            <img src="./img/manzana roja.jpg" class= "rounded-circle mb-3" alt="manzana roja" />
-                            <h3 class="card-title mb-3">Manzana Roja</h3>
-                            <p class="card-text">
-                                $800 KG.
-                            </p>
-                            <a href="./contacto.html">Haz tu pedido</a>
-                        </div>
-                    </div>
+                </tbody>
+            </table>
+            <br><br>
+            <div class="row mx-4">
+                <div class="col">
+                    <h3 class="itemCartTotal text-white ">Total: 0</h3>
                 </div>
-
-                <div class="col-md-6 col-lg-3">
-                    <div class="card bg-light">
-                        <div class="card-body text-center">
-                            <img src="./img/manzana verde.jpg" class="rounded-circle mb-3" alt="manzana verde" />
-                            <h3 class="card-title mb-3">Apio</h3>
-                            <p class="card-text">
-                                $800 KG.
-                            </p>
-                            <a href="./contacto.html">Haz tu pedido</a>
-                        </div>
-                    </div>
+                <div class="col d-flex justify-content-end">
+                    <button class="btn btn-success">COMPRAR</button>
                 </div>
-    </section>
-
-    <section class="p-5  verduras">
-        <div>
-            <p class="lead text-center  mb-5">
-            </p>
-            <div class="row g-4">
-                <div class="col-md-6 col-lg-3">
-                    <div class="card bg-light">
-                        <div class="card-body text-center">
-                            <img src="./img/frutilla.jpg" class="rounded-circle mb-3" alt="frutilla" />
-                            <h3 class="card-title mb-3">Frutilla</h3>
-                            <p class="card-text">
-                                $1.000 KG.
-                            </p>
-                            <a href="./contacto.html">Haz tu pedido</a>
-                        </div>
-                    </div>
-                </div>
-                </div>
-                </div>
-                <div class="col-md-6 col-lg-3">
-                    <div class="card bg-light">
-                        <div class="card-body text-center">
-                            <img src="./img/naranja.jpg" class="rounded-circle mb-3" alt="naranja" />
-                            <h3 class="card-title mb-3">Naranja</h3>
-                            <p class="card-text text-center">
-                                $800 KG.
-                            </p>
-                            <a href="./contacto.html">Haz tu pedido</a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-md-6 col-lg-3">
-                    <div class="card bg-light">
-                        <div class="card-body text-center">
-                            <img src="./img/mandarina.jpg" class="rounded-circle mb-3" alt="mandarina" />
-                            <h3 class="card-title mb-3">Mandarina</h3>
-                            <p class="card-text">
-                                $700 KG.
-                            </p>
-                            <a href="./contacto.html">Haz tu pedido</a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-md-6 col-lg-3">
-                    <div class="card bg-light">
-                        <div class="card-body text-center">
-                            <img src="./img/pera.jpg" class="rounded-circle mb-3" alt="pera" />
-                            <h3 class="card-title mb-3">Pera</h3>
-                            <p class="card-text">
-                                $800 KG.
-                            </p>
-                            <a href="./contacto.html">Haz tu pedido</a>
-                        </div>
-                    </div>
-                </div>
-    </section>
-
-    <section class="p-5  verduras">
-        <div>
-            <p class="lead text-center  mb-5">
-            </p>
-            <div class="row g-4">
-                <div class="col-md-6 col-lg-3">
-                    <div class="card bg-light">
-                        <div class="card-body text-center">
-                            <img src="./img/granada.jpg" class="rounded-circle mb-3" alt="granada" />
-                            <h3 class="card-title mb-3">Granada</h3>
-                            <p class="card-text">
-                                $500 und.
-                            </p>
-                            <a href="./contacto.html">Haz tu pedido</a>
-                        </div>
-                    </div>
-                </div>
-                </div>
-                </div>
-                <div class="col-md-6 col-lg-3">
-                    <div class="card bg-light">
-                        <div class="card-body text-center">
-                            <img src="./img/platano.jpg" class="rounded-circle mb-3" alt="platano" />
-                            <h3 class="card-title mb-3"> Platano</h3>
-                            <p class="card-text text-center">
-                                $1.000 KG.
-                            </p>
-                            <a href="./contacto.html">Haz tu pedido</a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-md-6 col-lg-3">
-                    <div class="card bg-light">
-                        <div class="card-body text-center">
-                            <img src="./img/platano verde.jpg" class="rounded-circle mb-3" alt="platano verde" />
-                            <h3 class="card-title mb-3">Platano Verde </h3>
-                            <p class="card-text">
-                                $1200 KG.
-                            </p>
-                            <a href="./contacto.html">Haz tu pedido</a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-md-6 col-lg-3">
-                    <div class="card bg-light">
-                        <div class="card-body text-center">
-                            <img src="./img/guinda.jpg" class="rounded-circle mb-3" alt="Guinda" />
-                            <h3 class="card-title mb-3">Guinda</h3>
-                            <p class="card-text">
-                                $1.200 KG.
-                            </p>
-                            <a href="./contacto.html">Haz tu pedido</a>
-                        </div>
-                    </div>
-                </div>
-    </section>
-
-    <section class="p-5  verduras">
-        <div>
-            <p class="lead text-center  mb-5">
-            </p>
-            <div class="row g-4">
-                <div class="col-md-6 col-lg-3">
-                    <div class="card bg-light">
-                        <div class="card-body text-center">
-                            <img src="./img/mango.jpg" class="rounded-circle mb-3" alt="mango" />
-                            <h3 class="card-title mb-3">Mango</h3>
-                            <p class="card-text">
-                                $500 KG.
-                            </p>
-                            <a href="./contacto.html">Haz tu pedido</a>
-                        </div>
-                    </div>
-                </div>
-                </div>
-                </div>
-                <div class="col-md-6 col-lg-3">
-                    <div class="card bg-light">
-                        <div class="card-body text-center">
-                            <img src="./img/maracuya.jpg" class="rounded-circle mb-3" alt="Maracuya" />
-                            <h3 class="card-title mb-3">Maracuya</h3>
-                            <p class="card-text text-center">
-                                $1.500 KG.
-                            </p>
-                            <a href="./contacto.html">Haz tu pedido</a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-md-6 col-lg-3">
-                    <div class="card bg-light">
-                        <div class="card-body text-center">
-                            <img src="./img/arandano.jpg" class="rounded-circle mb-3" alt="arando" />
-                            <h3 class="card-title mb-3">Arandano</h3>
-                            <p class="card-text">
-                                $1.000 - 250 GR.
-                            </p>
-                            <a href="./contacto.html">Haz tu pedido</a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-md-6 col-lg-3">
-                    <div class="card bg-light">
-                        <div class="card-body text-center">
-                            <img src="./img/melón tuna.jpg" class="rounded-circle mb-3" alt="meloón tuna" />
-                            <h3 class="card-title mb-3">Melón Tuna</h3>
-                            <p class="card-text">
-                                1.000 und.
-                            </p>
-                            <a href="./contacto.html">Haz tu pedido</a>
-                        </div>
-                    </div>
-                </div>
-    </section>
-    <section class="p-5  verduras">
-        <div>
-            <p class="lead text-center  mb-5">
-            </p>
-            <div class="row g-4">
-                <div class="col-md-6 col-lg-3">
-                    <div class="card bg-light">
-                        <div class="card-body text-center">
-                            <img src="./img/melón calameño.jpg" class="rounded-circle mb-3" alt="melón calameño" />
-                            <h3 class="card-title mb-3">AMelón Calamenño</h3>
-                            <p class="card-text">
-                                $1.000 und.
-                            </p>
-                            <a href="./contacto.html">Haz tu pedido</a>
-                        </div>
-                    </div>
-                </div>
-                </div>
-                </div>
-                <div class="col-md-6 col-lg-3">
-                    <div class="card bg-light">
-                        <div class="card-body text-center">
-                            <img src="./img/kiwi.jpg" class="rounded-circle mb-3" alt="kiwi" />
-                            <h3 class="card-title mb-3"> Kiwi</h3>
-                            <p class="card-text text-center">
-                                $900 KG.
-                            </p>
-                            <a href="./contacto.html">Haz tu pedido</a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-md-6 col-lg-3">
-                    <div class="card bg-light">
-                        <div class="card-body text-center">
-                            <img src="./img/frambueza.jpg" class="rounded-circle mb-3" alt="Frambueza" />
-                            <h3 class="card-title mb-3">Frambueza</h3>
-                            <p class="card-text">
-                                $1.000 - 250 GR.
-                            </p>
-                            <a href="./contacto.html">Haz tu pedido</a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-md-6 col-lg-3">
-                    <div class="card bg-light">
-                        <div class="card-body text-center">
-                            <img src="./img/alcayota.jpg" class="rounded-circle mb-3" alt="alcayota" />
-                            <h3 class="card-title mb-3">Alcayota</h3>
-                            <p class="card-text">
-                                $1.500 und.
-                            </p>
-                            <a href="./contacto.html">Haz tu pedido</a>
-                        </div>
-                    </div>
-                </div>
-    </section>
-    <br>
-    <br>
-        
-        <footer class="foot">
-            <h4 class=" text-center"> <b>Verduleria</b> </h4>
-            <div class="text-center">
-                <h3 id="fecha"></h3>
-                <h3 id="reloj"></h3>
-                <div class="social-networks">
-                    <a href="#" class="facebook"><i class="fab fa-facebook-f"></i></a>
-                    <a href="#" class="twitter"><i class="fab fa-twitter"></i></a>
-                    <a href="#" class="instagram"><i class="fab fa-instagram"></i></a>
-                </div>
-                <h4>Aniza <br>
-                    Constanza <br>
-                    Neifer <br>
-                    Víctor <br>
-                    Virginia <br>
-                    <br>
-                    2021
-                </h4>
             </div>
-        </footer>
 
-        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-            integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-            crossorigin="anonymous"></script>
-        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-            integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
-            crossorigin="anonymous"></script>
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
-            integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
-            crossorigin="anonymous"></script>
-        <script src="js/scrip.js"></script>
+        </div>
+    </div>
+
+    <footer class="foot">
+        <h4 class=" text-center"> <b>Verduleria</b> </h4>
+        <div class="text-center">
+            <h3 id="fecha"></h3>
+            <h3 id="reloj"></h3>
+            <div class="social-networks">
+                <a href="#" class="facebook"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" class="twitter"><i class="fab fa-twitter"></i></a>
+                <a href="#" class="instagram"><i class="fab fa-instagram"></i></a>
+            </div>
+            <h4>Aniza <br>
+                Constanza <br>
+                Neifer <br>
+                Víctor <br>
+                Virginia <br>
+                <br>
+                2021
+            </h4>
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.js"
+        integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
+        crossorigin="anonymous"></script>
+    <script src="./js/scripts.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+        integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+        crossorigin="anonymous"></script>
+    <script src="js/scrip.js"></script>
 </body>
 
 </html>
