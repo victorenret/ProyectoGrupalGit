@@ -1,4 +1,4 @@
-# ProyectoTeLoVendoGrupal
+# ProyectoTeLoVendo
  proyecto grupal
 
 Realizado de manera grupal en Bootcamp AWAKELAB, contiene atractivas imagenes. Funcionalidades en JavaScript. 
